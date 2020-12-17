@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			padding:0;
+			margin:0;
+			list-style-type: none;
+			text-decoration: none;
+		}
+		.clear:after {
+		    content:"";
+		    display: block;
+		    height: 0;
+		    clear: both;
+		}
+		.a{
+			width:100%;
+			height:40px;
+			background-color:#444;
+		}
+		.a1{
+			width:1200px;
+			margin:0 auto;
+		}
+		.a2 li a{
+			color:rgb(255,255,255);
+			font-size: 12px;
+		}
+		.a2 li{
+			margin-left:15px;
+		}
+		.a3{
+			float:right;
+			display:inline-block;
+			line-height:40px;
+		}
+		.a4{
+			float:right;
+			display:inline-block;
+			line-height:40px;
+		}
+		.a5{
+			float:right;
+			display:inline-block;
+			line-height:40px;
+		}
+		.b{
+			width:100%;
+			height:45px;
+			background-color:rgb(0,0,0);
+		}
+		.b1{
+			width:1200px;
+			height:45px; 
+			margin:0 auto;
+		}
+		.b1 li{
+			display: inline-block;
+			height: 45px;
+		}
+		.b2{
+			height:45px;
+			width:800px;
+			float:left;
+		}
+		.b3 a{
+			display:inline-block;
+			height: 45px;
+			opacity:0.7; 
+		}
+		.b3{
+			margin-left: 65px;
+		}
+		.b3 a:hover{
+			opacity: 1;
+		}
+		.bb4{
+			height:45px;
+			width:400px;
+			float:right;
+		}
+		.b4{
+			display: inline-block;
+			float:right;
+			margin-top:10px;
+		}
+		.b5{
+			height:20px;
+			float:left;
+		}
+		.b6{
+			vertical-align: bottom;
+			float:left;
+			height:24px;
+			width:20px;
+			background:rgba(0,0,0,1) url(images/1.png) no-repeat center center;
+			border:0;
+		}
+		.c{
+			width:100%;
+			background-color: rgb(19,19,19);
+		}
+		.c1{
+			width:1200px;
+			margin:0 auto;
+		}
+		.c2{
+
+			width:1200px;
+		}
+		.c2 a{
+			color:#bf4800;
+			font-size:20px;
+			text-align: center;
+			width:1200px;
+			display: inline-block;
+		}
+		.c3{
+			width:1200px;
+			height:60px;
+		}
+		.c3 a{
+			display: inline-block;
+			width:1200px;
+			text-align: center;
+			color:#f5f5f7;
+			font-size:56px;
+			line-height: 1.07143;
+    		font-weight: 600;
+		}
+		.c4{
+			width:1200px;
+		}
+		.c5 a{
+			display: inline-block;
+			width:1200px;
+			text-align: center;
+			font-size: 23px;
+		    line-height: 1.10722;
+		    font-weight: 400;
+		    letter-spacing: .004em;
+		    color: #f5f5f7;
+		}
+		.c6{
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		.c7{
+			color:#86868b;
+			font-size: 12px;
+			text-align: center;
+		}
+		.c8{
+			padding-bottom: 2px;
+		}
+		.c9{
+			width:100px;
+			display: inline-block;
+		}
+		.c10{
+			width:50px;
+			display: inline-block;
+		}
+		.cc{
+			width:200px;
+			display: inline-block;
+			margin-left:525px;
+		}
+		.c9 a{
+			color:#2997FF;
+			font-size: 15px;
+		}
+		.c10 a{
+			color:#2997FF;
+			font-size: 15px;
+		}
+		.c9 a:hover{
+			color:#FF2200;
+			border-bottom:1px solid #FF2200;
+		}
+		.c10 a:hover{
+			color:#FF2200;
+			border-bottom:1px solid #FF2200;
+		}
+		.c11{
+			width:1200px;
+			margin:0 auto;
+			height: 530px;
+			overflow: hidden;
+			position: relative;
+		}
+		.c111{
+			display: block;
+			position: absolute;
+			overflow: hidden;
+		}
+		.d{
+			width:100%;
+			background-color:#fafafa;
+			margin-bottom: 10px;
+		}
+		.d1{
+			text-align:center;
+			font-size: 56px;
+		    line-height: 1.07143;
+		    font-weight: 600;
+		    padding-top: 50px;
+		}
+		.d2{
+			text-align: center;
+			font-size: 28px;
+		    line-height: 1.10722;
+		    font-weight: 400;
+		    letter-spacing: .004em;
+		    margin-top: 6px;
+		}
+		.d3{
+			font-size:12px;
+			color: #86868b;
+			text-align: center;
+			margin-top:10px;
+			padding-bottom:10px;
+		}
+		.d4{
+			height:25px;
+			width:1200px;
+			margin:0 auto;
+			padding-bottom: 10px;
+		}
+		.d5{
+			width:1200px;
+			margin:0 auto;
+		}
+		.e{
+			width:100%;
+			background-color: rgb(0,0,0);
+		}
+		.e1{
+			width:1215px;
+			margin:0 auto;
+			background-color: rgb(255,255,255);
+		}
+		.e2{
+			width:600px;
+			float:left;
+			background-color: rgb(0,0,0);
+		}
+		.e3{
+			font-size: 40px;
+		    line-height: 1.1;
+		    font-weight: 600;
+		    letter-spacing: 0em;
+		    padding-top: 52px;
+		    color: #f5f5f7;
+		    width:600px;
+		    text-align: center;
+		}
+		.e4{
+			width:600px;
+			font-size: 21px;
+		    line-height: 1.2381;
+		    font-weight: 400;
+		    letter-spacing: .016em;
+		    color: #f5f5f7;
+		    text-align: center;
+		    margin-top: 10px;
+		}
+		.e5{
+			width:600px;
+			color: #86868b;
+			font-size: 15px;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.e6{
+			width:600px;
+		}
+		.e7 a{
+			color: #2997FF;
+			font-size: 15px;
+			display: block;
+			width:600px;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.e7 a:hover{
+			color:#FF2200;
+		}
+		.e8{
+			width:600px;
+			float:right;
+			background-color: rgb(0,0,0);
+		}
+		.all{
+			width:100%;
+			padding-top: 20px;
+			margin: 0 auto;
+
+		}
+		.ff{
+			width:100%;
+		}
+		.fff{
+			background-color:rgb(243,245,247);
+		}
+		.f{
+			margin:0 auto;
+			width:980px;
+		}
+		.f1{
+			box-shadow: 0px 2px 5px 0px rgba(118,118,118,0.5);
+		}
+		.all li{
+			width:140px;
+			height:60px;
+			background-color:rgb(255,255,255); 
+			text-align: center;
+			line-height: 60px;
+		}
+		.all>ul ul{
+			display: none;
+			position:absolute;
+		}
+		.all>ul>li{
+			float:left;
+			position: relative;
+		}
+		.all>ul a{
+			font-size: 20px;
+			color:#000;
+			display: inline-block;
+		}
+		.all>ul>li:hover ul{
+			display: block;
+			box-shadow: 0px 2px 5px 0px rgba(118,118,118,0.5);
+			cursor: pointer;
+		}
+		.all li:hover{
+			background-color:#000;
+			cursor: pointer;
+		}
+		.all li:hover>a{
+			color:white;
+		}
+		.f2{
+			width:100%;
+		}
+		.f3{
+			width:1200px;
+			margin:0 auto;
+			font-size: 20px;
+    		color: #494949;
+    		padding-top: 20px;
+    		padding-bottom:15px;
+		}
+		.f4{
+			width:100%;
+		}
+		.f5{
+			width:1200px;
+			margin:0 auto;
+		}
+		.ff6{
+			width:228px;
+			height:100px;
+			background-color:rgba(0,0,0,0.4);
+			position: absolute;
+			bottom:0;
+		}
+		.f6{
+			margin-right:10px;
+		}
+		.wenzi1{
+			line-height:20px;
+			margin-left:23px;
+			margin-right:20px;
+			color:white;
+			font-size:14px;
+			width:185px;
+			padding-top: 15px;
+		}
+		.wenzi2{
+			font-size: 12px;
+			color:white;
+			margin-left:23px;
+			margin-top: 10px;
+		}
+		.f5 li{
+			display: inline-block;
+			height:270px;
+			position: relative;	
+		}
+		.f6:hover{
+			box-shadow:5px 2px 5px 5px rgba(118,118,118,0.5);
+		}
+		.f666:hover{
+			box-shadow:5px 2px 5px 5px rgba(118,118,118,0.5);
+		}
+		.g{
+			width:100%;
+			margin-bottom: 35px;
+		}
+		.g1{
+			width:1200px;
+			margin:0 auto;
+		}
+		.g1 a{
+			display: inline-block;
+			height:270px;
+		}
+		.g1 ul li{
+			width:228px;
+			display: inline-block;
+		}
+		.gg1{
+			margin-right:10px;
+		}
+		.ggg1{
+			position: absolute;
+			bottom: 0;
+		}
+		.g3{
+			height:70px;
+			width:228px;
+			font-size:15px;
+			color: rgba(5,5,5,1);
+			text-align: center;
+			background-color:rgb(255,255,255);
+		}
+		.g2 li a:hover{
+			box-shadow:5px 2px 5px 5px rgba(118,118,118,0.5);
+		}
+		.h{
+			margin-top:40px;
+			width:100%;
+		}
+		.h1{
+			width:1200px;
+			margin:0 auto;
+		}
+		.h4{
+			position: relative;
+			overflow: hidden;
+		}
+		.h3{
+			position: absolute;
+			left:150px;
+			top:100px;
+		}
+		.h5{
+			width:370px;
+			display: inline-block;
+			position: absolute;
+			top:150px;
+			left:20px;
+		}
+		.h6{
+			display: block;
+			font-size: 48px;
+		    line-height: 1.08365;
+		    font-weight: 600;
+		    text-align: center;
+		    color: #fff;  
+		    width: 500px;
+		}
+		.h7{
+			display: inline-block;
+			float:left;
+			margin-right: 40px;
+		}
+		.h8{
+			display: inline-block;
+			float: left;
+		}
+		.h7 a{
+			color:#fff;
+			font-size: 21px;
+		}
+		.h8 a{
+			color:#fff;
+			font-size: 21px;
+		}
+		.h9{
+			width:250px;
+			height:30px;
+			display: inline-block;
+			position: absolute;
+			bottom:100px;
+			left:100px;
+		}
+		.h7:hover{
+			border-bottom: 2px solid #fff;
+		}
+		.h8:hover{
+			border-bottom: 2px solid #fff;
+		}
+		.i{
+			width:100%;
+		}
+		.i1{
+			width:1200px;
+			margin:0 auto;
+			height:400px;
+			position: relative;
+		}
+		.i2{
+			width:80px;
+			display: inline-block;
+			text-align: left;	
+			margin-right: 80px;
+		}
+		.i2 a{
+			font-size: 10px;
+			color:#86868b;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.i3{
+			font-size: 12.8px;
+			color:#000;
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+		.ii{
+			position:absolute;
+			top:50px;
+		}
+		.i4{
+			display: block;
+			position: absolute;
+			bottom:40px;
+			color: #86868b;
+			width: 1200px;
+			font-size: 12.8px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #d2d2d7;
+			margin-bottom: 5px;
+		}
+		.i4 a{
+			color: #06c;
+			font-size: 12.8px;
+		}
+		.ii5{
+			display: block;
+			position: absolute;
+			bottom:15px;
+		}
+		.i5{
+			display: inline-block;
+			width:360px;
+			font-size: 1em;
+			color: #86868b;
+		}
+		.i6{
+			display: inline-block;
+			width: 70px;
+			padding: auto auto;
+		}
+		.i6 a{
+			color: #515154;
+			font-size: 12.8px;
+		}
+		.time{
+			display: inline-block;
+		}
+		.box{
+			width: 100%;
+			height: 500px;
+			background-color: rgba(255,255,255,0.8);
+			z-index: 1;
+			color: white;
+			position: fixed;
+			top: 0;
+			z-index: 1;
+			top: 0;
+		}
+		.box1{
+			height: 40px;
+			display: inline-block;
+			float: left;
+			width: 570px;
+		}
+		input:focus{
+			outline: none;
+		}
+		.box2{
+			vertical-align: bottom;
+			border-left: 1px solid #8B8B7A;
+			border-bottom: 1px solid #8B8B7A;
+			border-top: 1px solid #8B8B7A;
+			height: 40px;
+			border-right: none;
+			float: left;
+			width: 80px;
+			text-align: center;
+		}
+		.box3{
+			color: #8B8B7A;
+			display: inline-block;
+			margin-top: 8px;
+		}
+		.box4{
+			
+			border-right: 1px solid #8B8B7A;
+			border-bottom: 1px solid #8B8B7A;
+			border-top: 1px solid #8B8B7A;
+			height: 40px;
+			border-left: none;
+			float: left; 
+		}
+		#box5{
+			float: left;
+			color: #8B8B7A;
+			height: 30px;
+			width: 250px;
+		}
+		.bbox{
+			display: inline-block;
+			width: 570px;
+		}
+		.box6{
+			display: inline-block;
+			width: 570px;
+			position: relative;
+		}
+		.box7{
+			height: 40px	
+		}
+		.box8{
+			vertical-align: bottom;
+			border-left: 1px solid #8B8B7A;
+			border-bottom: 1px solid #8B8B7A;
+			border-top: 1px solid #8B8B7A;
+			height: 40px;
+			border-right: none;
+			float: left;
+			width: 80px;
+			text-align: center;
+		}
+		.box9{
+			display: inline-block;
+			margin-top: 8px;
+			color: #8B8B7A;
+		}
+		.box10{
+			border-right: 1px solid #8B8B7A;
+			border-bottom: 1px solid #8B8B7A;
+			border-top: 1px solid #8B8B7A;
+			height: 40px;
+			border-left: none;
+			float: left; 
+		}
+		#boox{
+			float: right;
+			color: red;
+			height: 30px;
+			width: 250px;
+		}
+		#box11{
+			float: right;
+			color: red;
+			height: 30px;
+			width: 250px;
+		}
+		#box12{
+			color: #8B8B7A;
+			height: 30px;
+			width: 250px;
+		}
+		.box13{
+			width: 570px;
+			vertical-align: top;
+		}
+		.box14{
+			width: 240px;
+			height: 45px;
+			background-color: red;
+			border: 0;
+			vertical-align: middle;
+		}
+		.box15{
+			color: white;
+		}
+		#box16{
+			float: right;
+   			color: red;
+    		height: 30px;
+   	 		width: 250px;
+			margin-top: 12px;
+		}
+		.middle{
+			width: 570px;
+			margin: auto auto;
+			margin-top: 100px;
+		}
+		#box13next{
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="a">
+			<div class="a1">
+				<ul class="a2 clear">
+					<li class="a3"><a href="#">登陆</a></li>
+					<li class="a4"><a href="#">赞助商</a></li>
+					<li class="a5"><a href="#">注册</a></li>
+				</ul>
+				
+			</div>
+		</div>
+		<!-- <div class="b"> -->
+			<div class="box" style="display:none;">
+				<div class="middle">
+					<div class="bbox">
+						<div class="box1">
+							<div class="box2">
+								<span class="box3">用户名</span>
+							</div>
+							<input type="text" class="box4">
+							<div id="boox" calss="clear"></div>
+						</div>
+						<div id="box5"></div>
+					</div>
+					<div class="box6">
+						<div class="box7">
+							<div class="box8">
+								<span class="box9">设置密码</span>
+							</div>
+							<input type="password" class="box10">
+							<div id="box11" calss="clear"></div>
+						</div>
+						<div id="box12"></div>
+					</div>
+					<div class="box13">
+						<button class="box14"><span class="box15">立即注册</span></button>
+						<div id="box16" calss="clear"></div>
+					</div>
+					<div id="box13next">
+						<button class="box14"><span class="box15">完成</span></button>
+						<div id="box16" calss="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="b">
+			<div class="b1">
+				<ul class="b2">
+					<li class="b3"><a href="#"><img src="images/a1.svg"></a></li>
+					<li class="b3"><a href="#"><img src="images/a2.svg"></a></li>
+					<li class="b3"><a href="#"><img src="images/a3.svg"></a></li>
+					<li class="b3"><a href="#"><img src="images/a4.svg"></a></li>
+					<li class="b3"><a href="#"><img src="images/a5.svg"></a></li>
+					<li class="b3"><a href="#"><img src="images/a6.svg"></a></li>
+				</ul>
+				<div class="bb4">
+					<div class="b4">
+						<input type="text" placeholder="请输入关键词" class="b5">
+						<input type="button" class="b6">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="c">
+			<div class="c1">
+				<div class="c2">
+					<a href="#">新款</a>
+				</div>
+				<div class="c3">
+					<a href="#">iPhone SE</a>
+				</div>
+				<div class="c4">
+					<div class="c5">
+						<a href="#">称心称手，超值入手。</br>RMB 3299 起</a>
+					</div>
+				</div>
+				<div class="c6">
+					<p class="c7">折抵换购，仅&nbsp;RMB 90/月或 RMB&nbsp;2149 起</p>
+				</div>
+				<div class="c8">
+					<div class="cc">
+						<div class="c9">
+							<a href="#">进一步了解&nbsp;></a>
+						</div>
+						<div class="c10">
+							<a href="#">购买&nbsp;></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="c11">
+				<div class="c111" style="left:0">
+					<img src="images/c1.jpg">
+				</div>	
+			</div>
+		</div>
+		<div class="d">
+			<div class="d1">
+				iPhone 11
+			</div>
+			<div class="d2">
+				一切都刚刚好。
+			</div>
+			<div class="d3">
+				折抵换购，仅 RMB 167 每月或 RMB 3999 起。	
+			</div>
+			<div class="d4">
+				<div class="cc">
+					<div class="c9">
+						<a href="#">进一步了解&nbsp;</a>
+					</div>
+					<div class="c10">
+						<a href="#">购买&nbsp;></a>
+					</div>
+				</div>
+			</div>
+			<div class="d5">
+				<img src="images/d2.png">
+			</div>
+		</div>
+		<div class="e clear">
+			<div class="e1 clear">
+				<div class="e2">
+					<div class="e21" style="display:block;">
+						<div class="e6">
+							<div class="e3">
+								iPhone 11 Pro
+							</div>
+							<div class="e4">
+								摄像头、显示屏、性能，样样 Pro 如其名。
+							</div>
+							<div class="e5">
+								折抵换购，仅 RMB 273 每月或 RMB 6549 起。
+							</div>
+							<div class="e7">
+								<a href="#">进一步了解&nbsp;></a>
+								<a href="#">购买&nbsp;></a>
+							</div>
+						</div>
+						<img src="images/e1.png">
+					</div>
+					<div class="e22" style="display:none;">
+						<div class="e6">
+							<div class="e3">
+								MacBook
+							</div>
+							<div class="e4">
+								处理器、显示屏，样样Mac超乎你想象。
+							</div>
+							<div class="e5">
+								折抵换购，仅 RMB 678 每月或 RMB 16549 起。
+							</div>
+							<div class="e7">
+								<a href="#">进一步了解&nbsp;></a>
+								<a href="#">购买&nbsp;></a>
+							</div>
+						</div>
+						<img src="images/e6.jpg">
+					</div>
+				</div>
+				<div class="e8">
+					<div class="e81" style="display:block;">
+						<div class="e6">
+							<div class="e3">
+								iPhone 11 Pro
+							</div>
+							<div class="e4">
+								摄像头、显示屏、性能，样样 Pro 如其名。
+							</div>
+							<div class="e5">
+								折抵换购，仅 RMB 273 每月或 RMB 6549 起。
+							</div>
+							<div class="e7">
+								<a href="#">进一步了解&nbsp;></a>
+								<a href="#">购买&nbsp;></a>
+							</div>
+						</div>
+						<img src="images/e2.png">
+					</div>
+					<div class="e82" style="display:none;">
+						<div class="e6">
+							<div class="e3">
+								iPhone 12 
+							</div>
+							<div class="e4">
+								摄像头、显示屏、性能，更强大。
+							</div>
+							<div class="e5">
+								折抵换购，仅 RMB 347 每月或 RMB 8549 起。
+							</div>
+							<div class="e7">
+								<a href="#">进一步了解&nbsp;></a>
+								<a href="#">购买&nbsp;></a>
+							</div>
+						</div>
+						<img src="images/e4.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fff">
+			<div class="ff">
+				<div class="f">
+					<div class="all">
+						<ul class="clear f1">
+							<li>
+								<a href="#">iphone</a>
+								<ul>
+									<li><a href="#">iphonexr</a></li>
+									<li><a href="#">iphone11</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">ipad</a>
+								<ul>
+									<li><a href="#">ipad mini</a></li>
+									<li><a href="#">ipad pro</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">watch</a>
+								<ul>
+									<li><a href="#">watch1</a></li>
+									<li><a href="#">watch2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">相关配件</a>
+								<ul>
+									<li><a href="#">ipods</a></li>
+									<li><a href="#">耳机</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">优惠折扣</a>
+								<ul>
+									<li><a href="#">全场打折</a></li>
+									<li><a href="#">买一送一</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">更多推荐</a>
+								<ul>
+									<li><a href="#">MacBook</a></li>
+									<li><a href="#">MacBook Pro</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">售后服务</a>
+								<ul>
+									<li><a href="#">设备维护</a></li>
+									<li><a href="#">保修事项</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="f2">
+				<div class="f3">
+					热卖推荐
+				</div>
+			</div>
+			<div class="f4">
+				<div class="g">
+					<div class="g1">
+						<ul class="g2">
+							<li class="gg1">
+								<a href="#">
+									<img src="images/g1.png">
+									<div class="g3">
+										iphone摄影更清晰动人,摄像头、显示屏、性能，样样 Pro 如其名。
+									</div>
+								</a>
+							</li>
+							<li class="gg1">
+								<a href="#">
+									<img src="images/g2.png">
+									<div class="g3">
+										iphone摄影更清晰动人,摄像头、显示屏、性能，样样 Pro 如其名。
+									</div>
+								</a>
+							</li>
+							<li class="gg1">
+								<a href="#" class="li">
+									<img src="images/g3.png">
+									<div class="g3">
+										iphone摄影更清晰动人,摄像头、显示屏、性能，样样 Pro 如其名。
+									</div>
+								</a>
+							</li>
+							<li class="gg1">
+								<a href="#">
+									<img src="images/g4.png">
+									<div class="g3">
+										iphone摄影更清晰动人,摄像头、显示屏、性能，样样 Pro 如其名。
+									</div>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<img src="images/g5.png">
+									<div class="g3">
+										iphone摄影更清晰动人,摄像头、显示屏、性能，样样 Pro 如其名。
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="f5">
+					<ul class="ff5">
+						<li class="f6">
+							<a href="#">
+								<img src="images/111.png">
+								<div class="ff6">
+									<div class="wenzi1">
+										这款 Apple Watch 是健康生活的好伙伴
+									</div>
+									<div class="wenzi2">
+										<span class="wenzi3">热售！RMB 1499 起</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="f6">
+							<a href="#">
+								<img src="images/222.png">
+								<div class="ff6">
+									<div class="wenzi1">
+										这款 Apple Watch 是健康生活的好伙伴
+									</div>
+									<div class="wenzi2">
+										<span class="wenzi3">热售！RMB 1499 起</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="f6">
+							<a href="#">
+								<img src="images/333.png">
+								<div class="ff6">
+									<div class="wenzi1">
+										这款 Apple Watch 是健康生活的好伙伴
+									</div>
+									<div class="wenzi2">
+										<span class="wenzi3">热售！RMB 1499 起</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="f6">
+							<a href="#">
+								<img src="images/444.png">
+								<div class="ff6">
+									<div class="wenzi1">
+										这款 Apple Watch 是健康生活的好伙伴
+									</div>
+									<div class="wenzi2">
+										<span class="wenzi3">热售！RMB 1499 起</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="f666">
+							<a href="#">
+								<img src="images/555.png">
+								<div class="ff6">
+									<div class="wenzi1">
+										这款 Apple Watch 是健康生活的好伙伴
+									</div>
+									<div class="wenzi2">
+										<span class="wenzi3">热售！RMB 1499 起</span>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="h">
+				<div class="h1">
+					<div class="h4">
+						<div class="hh4" style="width:1200px">
+							<img src="images/g6.png" class="h2">
+							<img src="images/g7.png" class="h3">
+							<div class="h5">
+								<span class="h6">上千万首歌曲</span>
+								<span class="h6">倒计时<div class="time">80:60:24</div></span>
+								<span class="h6">全场打折</span>
+							</div>
+							<div class="h9 clear">
+								<div class="h7">
+									<a href="#">开始试用</a>
+								</div>
+								<div class="h8">
+									<a href="#" >进一步了解</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="i">
+			<div class="i1">
+				<div class="ii">
+					<div class="i2">
+						<span class="i3">选购以及了解</span>
+						<a href="#">Mac</a>
+						<a href="#">iPad</a>
+						<a href="#">iPhone</a>
+						<a href="#">Watch</a>
+						<a href="#">Airpods</a>
+						<a href="#">Music</a>
+						<a href="#">配件</a>
+						<a href="#">APPstore</a>
+					</div>
+					<div class="i2">
+						<span class="i3">服务</span>
+						<a href="#">账户</a>
+						<a href="#">iCloud</a>
+						<a href="#">Apple ID</a>
+						<a href="#">Apple Music</a>
+						<a href="#">售后</a>
+						<a href="#">客服</a>
+						<a href="#">配件</a>
+						<a href="#">APPstore</a>
+					</div>
+					<div class="i2">
+						<span class="i3">商务应用</span>
+						<a href="#">Mac</a>
+						<a href="#">iPad</a>
+						<a href="#">iPhone</a>
+						<a href="#">Watch</a>
+						<a href="#">Airpods</a>
+						<a href="#">Music</a>
+						<a href="#">配件</a>
+						<a href="#">APPstore</a>
+					</div>
+					<div class="i2">
+						<span class="i3">关于Apple</span>
+						<a href="#">Mac</a>
+						<a href="#">iPad</a>
+						<a href="#">iPhone</a>
+						<a href="#">Watch</a>
+						<a href="#">Airpods</a>
+						<a href="#">Music</a>
+						<a href="#">配件</a>
+						<a href="#">APPstore</a>
+					</div>
+					<div class="i2">
+						<span class="i3">Apple价值观</span>
+						<a href="#">Mac</a>
+						<a href="#">iPad</a>
+						<a href="#">iPhone</a>
+						<a href="#">Watch</a>
+						<a href="#">Airpods</a>
+						<a href="#">Music</a>
+						<a href="#">配件</a>
+						<a href="#">APPstore</a>
+					</div>
+					<div class="i2">
+						<span class="i3">选购以及了解</span>
+						<a href="#">Mac</a>
+						<a href="#">iPad</a>
+						<a href="#">iPhone</a>
+						<a href="#">Watch</a>
+						<a href="#">Airpods</a>
+						<a href="#">Music</a>
+						<a href="#">配件</a>
+						<a href="#">APPstore</a>
+					</div>
+				</div>
+				<div class="i4">
+					更多选购方式：<a href="#">查找你附近的 Apple Store 零售店</a>或者致电 400-666-8800。
+				</div>
+				<div class="ii5">
+					<div class="i5">
+						Copyright ©2020Apple Inc. 保留所有权利。
+					</div>
+					<div class="i6">
+						<a href="#">隐私政策</a>
+					</div>
+					<div class="i6">
+						<a href="#">使用条款</a>
+					</div>
+					<div class="i6">
+						<a href="#">销售政策</a>
+					</div>
+					<div class="i6">
+						<a href="#">法律信息</a>
+					</div>
+					<div class="i6">
+						<a href="#">网站地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var c111 =document.getElementsByClassName('c111')[0];
+		var e81 =document.getElementsByClassName('e81')[0];
+		var e82 =document.getElementsByClassName('e82')[0];
+		var e21 =document.getElementsByClassName('e21')[0];
+		var e22 =document.getElementsByClassName('e22')[0];
+		var time=document.getElementsByClassName('time')[0];
+		var a3=document.getElementsByClassName('a3')[0];
+		var g1=document.getElementsByClassName('g1')[0].children;
+		var ff5=document.getElementsByClassName('ff5')[0].children;
+		var num1=1;
+		var num2=1;
+		var p=1;
+		setInterval(function(){
+			c111.style.left=parseInt(c111.style.left)-p+'px';
+			if(parseInt(c111.style.left)==-1000){
+				p=-1;
+			}
+			if(parseInt(c111.style.left)==1000){
+				p=1;
+			}
+		},10)
+		e81.onclick=function(){
+			if(num1==1){
+				e81.style.display="none";
+				e82.style.display="block";
+				num1=0;
+			}
+			
+		}
+		e82.onclick=function(){
+			if(num1==0){
+				e82.style.display="none";
+				e81.style.display="block";
+				num1=1;
+			}
+		}
+		e21.onclick=function(){
+			if(num2==1){
+				e21.style.display="none";
+				e22.style.display="block";
+				num2=0;
+			}
+			
+		}
+		e22.onclick=function(){
+			if(num2==0){
+				e22.style.display="none";
+				e21.style.display="block";
+				num2=1;
+			}
+		}
+		var s=60;
+		var m=60;
+		var t=80;
+		setInterval(function(){
+			if(s==0){
+				s=60;            
+				m--;
+			}
+			if(m==0){
+				m=60;
+				t--;
+			}
+			if(t==0){
+				t=80;
+			}
+			if(t!=0){
+				time.innerHTML=t+":"+m+":"+s--;
+			}else{
+				time.innerHTML="活动结束";
+			}
+		},1000)
+		a3.onclick=function(){
+			prompt("请输入你的账号");
+		}
+		for(var i=0;i<g1.length;i++){
+			g1[i].onclick=function(){
+				window.location.href="https://www.apple.com.cn/iphone-12-pro/";
+			}
+		}
+		for(var i=0;i<ff5.length;i++){
+			ff5[i].onclick=function(){
+				window.location.href="https://www.apple.com.cn/apple-watch-se/";
+			}
+		}
+
+
+		var a5=document.getElementsByClassName('a5')[0];
+		var box=document.getElementsByClassName('box')[0];
+		var box13next=document.getElementById('box13next');
+		a5.onclick=function(){
+			box.style.display="inline-block";
+		}
+
+		var st=document.getElementsByClassName('box4')[0];
+		var st1=document.getElementsByClassName('box10')[0];
+		box13next.onclick=function(){
+			box.style.display="none";
+			information.innerHTML="";
+			information1.innerHTML="";
+			information2.innerHTML="";
+			st.value="";
+			st1.value="";
+
+		}
+
+
+
+		var box5 = document.getElementById("box5");
+		var inp=document.getElementsByClassName('box4')[0];
+		inp.onfocus=function(){
+			var di="支持中文数字";
+			box5.innerHTML=di;
+		}
+		inp.onblur=function(){
+			var st=document.getElementsByClassName('box4')[0].value;
+			if(st==""){
+				var di="用户名不能为空";
+				box5.innerHTML=di;
+			}else{
+				box5.innerHTML="";
+			}
+		}
+		var box12 = document.getElementById("box12");
+		var inp1=document.getElementsByClassName('box10')[0];
+		inp1.onfocus=function(){
+			var di="建议使用两种字符组合";
+			box12.innerHTML=di;
+		}
+		inp1.onblur=function(){
+			var st=document.getElementsByClassName('box10')[0].value;
+			if(st==""){
+				var di="密码不能为空";
+				box12.innerHTML=di;
+			}else{
+				box12.innerHTML="";
+			}
+		}
+		var button=document.getElementsByClassName('box14')[0];
+		var information=document.getElementById('boox');
+		var information1=document.getElementById('box11');
+		var information2=document.getElementById('box16');
+		button.onclick = function() {
+			var st=document.getElementsByClassName('box10')[0].value;
+			var st1=document.getElementsByClassName('box4')[0].value;
+			if(st!=""&&st1!=""){
+				information.innerHTML="注册成功！";
+				information1.innerHTML="用户名："+st1;
+				information2.innerHTML="密码："+st;
+			}
+		}
+
+	</script>
+</body>
+</html>
